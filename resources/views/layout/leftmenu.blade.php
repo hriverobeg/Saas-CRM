@@ -17,7 +17,7 @@
               </li>
 
               <!--customer-->
-              <li class="sidenav-menu-item menu-tooltip menu-with-tooltip"
+              <li class="sidenav-menu-item {{ $page['mainmenu_admin'] ?? '' }} menu-tooltip menu-with-tooltip"
                   title="Customers">
                   <a class="waves-effect waves-dark" href="/app-admin/customers" aria-expanded="false" target="_self">
                       <i class="sl-icon-people"></i>

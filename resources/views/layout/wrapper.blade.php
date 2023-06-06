@@ -36,6 +36,10 @@
     </div>
     <!--main wrapper-->
 
+    <!--common modals-->
+    @include('modals.common-modal-wrapper')
+    <!--common modals-->
+
      <!--js footer-->
      @include('layout.footerjs')
 </html>
