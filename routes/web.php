@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AuthController::class, 'login']);
 Route::resource('/admin', AdminController::class);
+Route::any('/admin/search', [AdminController::class, 'index']);

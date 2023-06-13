@@ -6,7 +6,7 @@
         <div class="header-search" id="header-search">
             <i class="sl-icon-magnifier"></i>
             <input type="text" class="form-control search-records list-actions-search"
-                data-url="{{ url('app-admin/customers/search?action=search') }}" data-type="form" data-ajax-type="post"
+                data-url="/admin/search?action=search" data-type="form" data-ajax-type="post"
                 data-form-id="header-search" id="search_query" name="search_query"
                 placeholder="Buscar">
         </div>
@@ -16,7 +16,7 @@
             class="btn btn-danger btn-add-circle edit-add-modal-button js-ajax-ux-request reset-target-modal-form"
             data-toggle="modal" data-target="#commonModal" data-url="{{ url('/admin/create') }}"
             data-loading-target="commonModalBody" data-modal-title="Nuevo admin"
-            data-action-url="{{ url('/admin') }}"
+            data-action-url="/admin"
             data-action-method="POST"
             data-modal-size="modal-lg"
             data-action-ajax-loading-target="commonModalBody">
