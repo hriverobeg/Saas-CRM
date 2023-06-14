@@ -2,6 +2,8 @@
 
 namespace App\Traits;
 
+use Response;
+
 trait WebTrait {
 
 
@@ -14,7 +16,23 @@ trait WebTrait {
         'action' => $dom_action,
         'value' => $html);
 
-    return response()->json($jsondata);
+    return Response::json($jsondata);
   }
 
+  public function responseDirty() {
+    $jsondata['notification'] = array('type' => 'danger', 'value' => 'Se debe modificar un valor');
+    return Response::json($jsondata, 402);
+  }
+
+  public function showSuccessCreate() {
+    request()->session()->flash('success-notification', 'Se ha creado con éxito');
+  }
+
+  public function showSuccessUpdate() {
+    request()->session()->flash('success-notification', 'Se ha actualizado con éxito');
+  }
+
+  public function showSuccessDelete() {
+    request()->session()->flash('success-notification', 'Se ha eliminado exitosamente');
+  }
 }

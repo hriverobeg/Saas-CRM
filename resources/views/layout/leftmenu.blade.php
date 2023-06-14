@@ -19,9 +19,17 @@
               <!--customer-->
               <li class="sidenav-menu-item {{ $page['mainmenu_admin'] ?? '' }} menu-tooltip menu-with-tooltip"
                   title="Customers">
-                  <a class="waves-effect waves-dark" href="/app-admin/customers" aria-expanded="false" target="_self">
+                  <a class="waves-effect waves-dark" href="/admin" aria-expanded="false" target="_self">
                       <i class="sl-icon-people"></i>
                       <span class="hide-menu">Admin</span>
+                  </a>
+              </li>
+
+              <li class="sidenav-menu-item {{ $page['mainmenu_cliente'] ?? '' }} menu-tooltip menu-with-tooltip"
+                  title="Customers">
+                  <a class="waves-effect waves-dark" href="/cliente" aria-expanded="false" target="_self">
+                        <i class="sl-icon-user-follow"></i>
+                      <span class="hide-menu">Cliente</span>
                   </a>
               </li>
           </ul>

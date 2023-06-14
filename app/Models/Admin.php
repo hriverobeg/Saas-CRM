@@ -13,11 +13,6 @@ class Admin extends Authenticatable
 
     protected $table = 'admin';
 
-    public const NOMBRE = 'nombre';
-    public const EMAIL = 'email';
-    public const PASSWORD = 'password';
-    public const REMEMBER_TOKEN = 'remember_token';
-
     protected $fillable = [
         'nombre', 'email', 'password',
     ];

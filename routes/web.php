@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\V1\AuthController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClienteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AuthController::class, 'login']);
 Route::resource('/admin', AdminController::class);
+Route::resource('/cliente', ClienteController::class);
 Route::any('/admin/search', [AdminController::class, 'index']);
